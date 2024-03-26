@@ -12,7 +12,8 @@ In order to solve this task, I did the following steps:
 	"CREATE USER 'andrei'@'%' IDENTIFIED BY 'admin';
 	"GRANT ALL PRIVILEGES ON company.* TO 'andrei'@'%';
 	"FLUSH PRIVILEGES;"
-In Exec tab, running the command to add all the data from the company.sql file to our database "companie", we notice a bug:
+
+# In Exec tab, running the command to add all the data from the company.sql file to our database "companie", I noticed a bug:
 "sh-4.4# mysql -u root -p companie < company.sql
 	Enter password: 
 	ERROR 1366 (HY000) at line 12: Incorrect integer value: 'Consulting' for column 'department' at row 41"
